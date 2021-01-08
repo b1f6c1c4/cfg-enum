@@ -22,3 +22,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+/bin/
+/ivy/ivy/concept_space_parsetab.py
+/ivy/ivy/ivy_dafny_parsetab.py
+/ivy/ivy/ivy_formulatab.py
+/ivy/ivy/ivy_termtab.py
+/ivy/ivy/parser.out
+/synthesis
