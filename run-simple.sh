@@ -9,7 +9,7 @@ if [ ${IVY_FILE: -4} == ".pyv" ]
 then
   python3 scripts/file_mypyvy_to_json.py $IVY_FILE > $TEMP
 else
-  python scripts/file_to_json.py $IVY_FILE > $TEMP
+  python2 scripts/file_to_json.py $IVY_FILE > $TEMP
 fi
 
 shift
