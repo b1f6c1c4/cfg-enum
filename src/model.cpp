@@ -701,7 +701,7 @@ shared_ptr<Model> Model::extract_model_from_z3(
   if (is_z3_context(ctx)) {
     return extract_z3(ctx, solver, module, e);
   } else {
-    return extract_cvc4(ctx, solver, module, e);
+    throw std::logic_error{"Not Implemented"};
   }
 }
 

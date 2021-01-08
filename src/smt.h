@@ -114,7 +114,7 @@ namespace smt {
       if (backend == Backend::z3) {
         p = make_z3_context();
       } else {
-        p = make_cvc4_context();
+        throw std::logic_error{"Not Implemented"};
       }
     }
 

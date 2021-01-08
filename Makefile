@@ -21,7 +21,6 @@ OBJECTS = $(addprefix bin/,\
 	alt_depth2_synth_enumerator.o \
 	smt.o \
 	smt_z3.o \
-	smt_cvc4.o \
 	tree_shapes.o \
 	template_counter.o \
 	template_desc.o \
@@ -51,7 +50,7 @@ all: synthesis
 glucoselib: GLUCOSE_LIB
 
 synthesis: $(OBJECTS) $(LIBS)
-	clang++ -g -o synthesis $(LIBPATH) $(OBJECTS) $(LIBS) -lz3 -lcvc4 -lpthread
+	clang++ -g -o synthesis $(LIBPATH) $(OBJECTS) $(LIBS) -lz3 -lpthread
 
 bin/lib_glucose_release.a:
 	@mkdir -p $(basename $@)
